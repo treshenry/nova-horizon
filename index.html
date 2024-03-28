@@ -1,6 +1,97 @@
 <html>
   <head>
     <title>Nova Horizon - Minecraft Community</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+      body {
+        background-color: black;
+        color: white;
+        font-size: 18pt;
+        padding: 0;
+        margin: 0;
+      }
+
+      .title-font {
+        font-family: "Press Start 2P";
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .hero {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/nova-horizon-banner.jpeg);
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      section {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 70%;
+        height: 60vh;
+        border-radius: 1.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 0;
+        margin: 5rem 0;
+      }
+
+      .icon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -4rem;
+        filter: drop-shadow(0 0 0.75rem black);
+        text-align: center;
+      }
+
+      .darkorange {
+        color: darkorange;
+      }
+
+      p {
+        text-align: center;
+        margin: 0 5rem;
+        padding-bottom: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+    <link rel="icon" type="image/png" href="/nova-horizon-icon.png" />
   </head>
-  <body></body>
+  <body>
+    <div class="hero">
+      <section>
+        <div class="icon">
+          <img style="width: 8rem; height: 8rem" src="/nova-horizon-icon.png" />
+        </div>
+        <div style="overflow: scroll">
+          <h1 class="title-font" style="color: orange">Nova Horizon</h1>
+          <p>
+            A casual Minecraft community for ✨creative✨ 🕹️fun🕹️ with 💛friends
+            and family💛.
+          </p>
+          <p>
+            Email <span style="color: darkorange">tres@treshenry.net</span> with
+            your Minecraft Java profile name to request access.
+          </p>
+          <p>
+            <strong>Server Address</strong>:
+            <span class="darkorange">us1429094.g-portal.game</span>
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
