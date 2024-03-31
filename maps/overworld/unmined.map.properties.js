@@ -5,9 +5,9 @@ var UnminedMapProperties = {
     defaultZoom: 0,
     imageFormat: "jpeg",
     minRegionX: -2,
-    minRegionZ: -2,
-    maxRegionX: 2,
-    maxRegionZ: 4,
+    minRegionZ: -4,
+    maxRegionX: 3,
+    maxRegionZ: 8,
     worldName: "Nova Horizon",
     background: "#000000",
     markers: new Array()
