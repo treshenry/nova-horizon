@@ -7,7 +7,7 @@ var UnminedMapProperties = {
     minRegionX: -1,
     minRegionZ: -11,
     maxRegionX: 6,
-    maxRegionZ: 0,
+    maxRegionZ: 1,
     worldName: "Nova Horizon",
     background: "#000",
     markers: new Array()
