@@ -6,7 +6,7 @@ var UnminedMapProperties = {
     imageFormat: "jpeg",
     minRegionX: -9,
     minRegionZ: -13,
-    maxRegionX: 7,
+    maxRegionX: 9,
     maxRegionZ: 8,
     worldName: "Nova Horizon",
     background: "#000",
