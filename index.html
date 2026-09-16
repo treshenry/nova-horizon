@@ -1,10 +1,13 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
       content="A casual Minecraft community for ✨creative✨ 🕹️fun🕹️ with 💛friends and family💛."
     />
-    <meta property="og:title" content="Nova Horizon" />
+    <meta property="og:title" content="Horizon" />
     <meta
       property="og:description"
       content="A casual Minecraft community for ✨creative✨ 🕹️fun🕹️ with 💛friends and family💛."
@@ -16,29 +19,36 @@
     <meta property="og:url" content="https://nova-horizon.netlify.app" />
     <meta property="og:type" content="website" />
 
-    <title>Nova Horizon - Minecraft Community</title>
+    <title>Horizon - Minecraft SMP</title>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         background-color: black;
         color: white;
-        font-size: 18pt;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
         padding: 0;
         margin: 0;
       }
 
       .title-font {
-        font-family: "Press Start 2P";
+        font-family: "Press Start 2P", monospace;
         font-weight: 400;
         font-style: normal;
       }
 
       .hero {
-        width: 100vw;
-        height: 80vh;
-        background-image: url(/nova-horizon-ch5.jpeg);
+        width: 100%;
+        min-height: 80vh;
+        padding: 2rem 1rem 6rem;
+        background-image: url(/nova-horizon-ch5.jpg);
         background-size: cover;
         background-position: bottom center;
         background-repeat: no-repeat;
@@ -49,7 +59,7 @@
 
       .hero-title {
         background-color: rgba(0, 0, 0, 0.8);
-        width: 70%;
+        width: min(100%, 56rem);
         border-radius: 1.5rem;
         position: relative;
         display: flex;
@@ -60,9 +70,10 @@
 
       h1 {
         text-align: center;
-        padding: 4rem;
+        padding: clamp(1rem, 5vw, 4rem);
         margin: 0;
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        overflow-wrap: anywhere;
       }
 
       .icon {
@@ -79,61 +90,68 @@
         text-align: center;
         max-width: 56rem;
         margin: 0 auto;
-        padding: 0 1rem 2.5rem 1rem;
-        font-family: Arial, Helvetica, sans-serif;
+        padding: 0 1rem 2rem 1rem;
+        overflow-wrap: anywhere;
       }
     </style>
     <link rel="icon" type="image/png" href="/nova-horizon-icon.png" />
   </head>
 
   <body>
-    <div class="hero">
-      <div class="hero-title">
-        <h1 class="title-font" style="color: orange">Horizon</h1>
+    <main>
+      <header class="hero">
+        <div class="hero-title">
+          <h1 class="title-font" style="color: orange; padding: 0.5em">
+            Horizon SMP
+            <p style="padding: 0">horizon.treshenry.net</p>
+          </h1>
+        </div>
+      </header>
+      <div>
+        <div class="icon">
+          <img width="128" height="128" src="/nova-horizon-icon.png" alt="" />
+        </div>
+        <div>
+          <p style="padding-bottom: 0.2em">
+            A casual<span style="color: darkorange">*</span> Minecraft community
+            for
+            <span style="white-space: nowrap">✨creative✨</span>
+            <span style="white-space: nowrap">🕹️fun🕹️</span>
+            with
+            <br />
+            <span style="display: inline-block; max-width: 100%"
+              >💛friends and family💛</span
+            >.
+          </p>
+          <p style="font-size: 0.9rem">
+            <span style="color: darkorange">*</span>It's still survival mode
+            though, so buckle up!
+          </p>
+          <p>Welcome to <em>Horizon Chapter 5</em>!</p>
+          <p>
+            Chapter 5 started on September 16, 2026, on Minecraft Java Edition
+            26.3.
+          </p>
+          <p>
+            <a class="darkorange" href="guidelines.html"
+              >Community Guidelines</a
+            >
+          </p>
+          <p>
+            <a class="darkorange" href="https://www.youtube.com/@NovaHorizonMC"
+              >Horizon on YouTube</a
+            >
+          </p>
+          <p>
+            To request access join our
+            <a class="darkorange" href="https://discord.gg/yW8Xh7wnHf"
+              >Discord</a
+            >.
+          </p>
+          <p style="padding-bottom: 0.2em">Point your Minecraft client at:</p>
+          <p class="darkorange">horizon.treshenry.net</p>
+        </div>
       </div>
-    </div>
-    <section>
-      <div class="icon">
-        <img style="width: 8rem; height: 8rem" src="/nova-horizon-icon.png" />
-      </div>
-      <div style="overflow: scroll">
-        <p>
-          A casual<span style="color: darkorange">*</span> Minecraft community
-          for
-          <span style="white-space: nowrap">✨creative✨</span>
-          <span style="white-space: nowrap">🕹️fun🕹️</span>
-          with
-          <span style="white-space: nowrap">💛friends and family💛</span>.
-        </p>
-        <p>
-          Welcome to Horizon Chapter 5! Started September 16th, 2026 on Java
-          Edition 26.3. Mostly vanilla but with Simple Voice Chat for proximity
-          chat.
-        </p>
-        <p>
-          <a class="darkorange" href="guidelines.html">Community Guidelines</a>
-        </p>
-        <p>
-          <a class="darkorange" href="https://www.youtube.com/@NovaHorizonMC"
-            >@NovaHorizonMC YouTube</a
-          >
-        </p>
-        <p>
-          Email
-          <span style="color: darkorange">nova-horizon@treshenry.net</span> with
-          your Minecraft Java profile name to request access or join our
-          <a class="darkorange" href="https://discord.gg/yW8Xh7wnHf">Discord</a
-          >.
-        </p>
-        <p>
-          Connect to:
-          <span class="darkorange">horizon.treshenry.net</span>
-        </p>
-        <p style="font-size: 0.9rem">
-          <span style="color: darkorange">*</span>It's still survival mode
-          though, so buckle up!
-        </p>
-      </div>
-    </section>
+    </main>
   </body>
 </html>
